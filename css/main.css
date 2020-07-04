@@ -1,80 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
 *{
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .m-f{
-	font-family: 'Aclonica', sans-serif;
-	text-transform: uppercase;
+  font-family: 'Aclonica', sans-serif;
+  text-transform: uppercase;
 }
 
 body{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/back-image.jpg");
-	background-size: cover, cover;
-	background-attachment: fixed;
-	position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/back-image.jpg");
+  background-size: cover, cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
 main{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .container{
-	width: 70%;
-	margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .header{
-	height: 100vh;
- 	color: #ffffff;
-	line-height: 50px;
+  height: 100vh;
+  color: #ffffff;
+  line-height: 50px;
 }
 
 .header-content{
-	padding-top: 40vh;
-	text-align: center;
+  padding-top: 40vh;
+  text-align: center;
 }
 
 .header-content h1{
-	font-size: 42px;
+  font-size: 42px;
 }
 
 .btn{
-	background-color: transparent;
-	border: 3px solid #ffffff;
-	padding: 15px 35px;
-	font-weight: bolder;
-	text-decoration: none;
-	color: #ffffff;
-	transition: all 400ms ease-in-out;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 400ms ease-in-out;
 }
 
 
 .btn-trans:hover{
-	background-color: white;
-	color: #000000;
-	border-color: transparent;
+  background-color: white;
+  color: #000000;
+  border-color: transparent;
 }
 
+/*Icons*/
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+
+
+/*CSS for social icons*/
+.social-icons {
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+
+/*CSS for Media Queries*/
+
 @media screen and (max-width: 320px){
-	.header-content{
-		padding-top: 30vh;
-	}
-	.header-content h1{
-		font-size: 35px;
-	}
 
-	.header-content h2{
-    		font-size: 18px;
-  	}
+  .header-content{
+    padding-top: 30vh;
+  }
 
-	.btn{
-		padding: 10px 15px;
-		font-weight: bold;
-	}
+  .header-content h1{
+    font-size: 35px;
+  }
+
+  .header-content h2{
+    font-size: 18px;
+  }
+
+  .btn{
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+
+  .fa {
+    padding: 7px;
+    font-size: 25px;
+  }
+
 }
