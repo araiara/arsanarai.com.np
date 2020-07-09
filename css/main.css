@@ -11,32 +11,29 @@
 }
 
 body{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/back-image.jpg");
-  background-size: cover, cover;
-  background-attachment: fixed;
-  position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/back-image.jpg");
+	background-size: cover, cover;
+	background-attachment: fixed;
+	position: relative;
 }
 
 main{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.container{
-  width: 70%;
-  margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .header{
   height: 100vh;
-  color: #ffffff;
+  color: #fff;
   line-height: 50px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .header-content{
-  padding-top: 40vh;
+  padding-top: 35vh;
   text-align: center;
 }
 
@@ -46,18 +43,28 @@ main{
 
 .btn{
   background-color: transparent;
-  border: 3px solid #ffffff;
-  padding: 15px 35px;
+  border: 3px solid #fff;
+  padding: 10px 20px;
   font-weight: bolder;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   transition: all 400ms ease-in-out;
 }
 
+.btn-fill{
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-fill:hover{
+  background-color: transparent;
+  border-color: 3px solid #fff;
+  color: #fff;
+}
 
 .btn-trans:hover{
   background-color: white;
-  color: #000000;
+  color: #000;
   border-color: transparent;
 }
 
@@ -88,27 +95,37 @@ main{
   display: inline;
 }
 
+/*CSS for footer*/
+.footer {
+  text-align: center;
+}
+
 
 /*CSS for Media Queries*/
+@media screen and (max-width: 768px){
+  .header-content{
+    padding-top: 30vh;
+  }
+}
 
 @media screen and (max-width: 320px){
 
   .header-content{
-    padding-top: 30vh;
+    padding-top: 20vh;
   }
 
   .header-content h1{
-    font-size: 35px;
-  }
+	  font-size: 35px;
+	}
 
   .header-content h2{
     font-size: 18px;
   }
 
   .btn{
-    padding: 10px 15px;
-    font-weight: bold;
-  }
+	  padding: 10px 15px;
+	  font-weight: bold;
+	}
 
   .fa {
     padding: 7px;
